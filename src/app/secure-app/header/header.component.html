@@ -1,0 +1,33 @@
+<div class="container">
+ 
+  <div class="banner">
+   <span>
+  <img src="assets/icon-sample-25.jpg" width="90px"/>
+  </span>
+    <h1>Welcome to {{ title }}!</h1>
+  </div>
+
+  <nav id="nav-menu-trigger" class="nav-menu">
+
+  <div class="icon" (click)="handleResponsiveNavClick($event)">
+  <a class="fa fa-bars">
+  </a>
+  </div>
+
+  <div class="nav-item">
+  <a class="link" routerLink="/claim/list">Home</a>
+  </div>
+   <div class="nav-item">
+  <a class="link" routerLink="/claim/add">Make A new Claim</a>
+  </div>
+   <div class="nav-item">
+  <a class="link" routerLink="/claim/send-mail">Send Email</a>
+  </div>
+
+   <div class="nav-item">
+  <a class="link" link="#" (click)="onLogout()">Logout </a>
+  </div>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>

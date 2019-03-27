@@ -1,0 +1,17 @@
+<div class="container">
+<h2>Your Current Claims: </h2>
+<ul *ngFor="let claim of claims" class="claim-list">
+  <li class="claim-item" (click)="getClaimInfo(claim.id)">
+
+  <span>
+  <em>Claim Id:</em> {{claim.id}} 
+  </span>
+
+
+   <span>
+   <em>Claim Details:</em>  {{claim.details}} 
+   </span>
+
+   </li>
+</ul>
+</div>

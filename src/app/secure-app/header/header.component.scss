@@ -1,0 +1,77 @@
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  background-color: crimson;
+  .icon {
+    display: none;
+  }
+
+  div {
+    flex:1;
+    
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    a {
+      display: block;
+      color: snow;
+      text-align: center;
+      font-weight: 700;
+      text-decoration: none;
+      min-height: 60px;
+      line-height: 60px;
+      align-content: center;
+    }
+  }
+
+  div:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+  }
+
+ 
+}
+
+@media screen and (max-width: 700px) {
+
+ .nav-menu {
+  flex-direction: column;
+
+ .nav-item {
+   display:none;
+   
+ }   
+
+ .icon {
+   display: block;
+   text-align: center;
+ }
+
+}
+
+.nav-menu.responsive-view {
+  
+  .nav-item {
+    display: block; 
+    
+  }
+
+  .icon {
+    background-color: rgb(41, 65, 65);
+  }
+
+}
+}
+
+.banner {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ background-color:aliceblue;
+ text-align: center;
+}

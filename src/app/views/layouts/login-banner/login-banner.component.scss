@@ -1,0 +1,46 @@
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  background-color: crimson;
+  .icon {
+    display: none;
+  }
+
+  div {
+    flex:1;
+    
+
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    a {
+      display: block;
+      color: snow;
+      text-align: center;
+      font-weight: 700;
+      text-decoration: none;
+      min-height: 60px;
+      line-height: 60px;
+      align-content: center;
+    }
+  }
+
+  div:hover{
+    background-color: darkslategray;
+    cursor: pointer;
+  }
+
+ 
+}
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color:aliceblue;
+  text-align: center;
+ }
+ 

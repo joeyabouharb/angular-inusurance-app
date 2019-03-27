@@ -1,0 +1,25 @@
+<app-login-banner></app-login-banner>
+<div class="container">
+<form class="form-style">
+
+    <li>
+    <label>Username <span class="required">*</span></label>
+    <input [(ngModel)]="user.username" name="username" type="username" class="field-long"/>
+    </li>
+    <li>
+
+        <li>
+    <label>Email <span class="required">*</span></label>
+    <input [(ngModel)]="user.email" name="email" type="email" class="field-long"/>
+    </li>
+    <li>
+
+    <li>
+    <label>Password <span class="required">*</span></label>
+    <input [(ngModel)]="user.password" name="password" type="password" class="field-long"/>
+    </li>
+    <li>
+
+  <input type="submit" (click)="onSubmit()" value="register"/>
+</form>
+</div>

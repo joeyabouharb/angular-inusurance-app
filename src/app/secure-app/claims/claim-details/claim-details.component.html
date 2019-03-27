@@ -1,0 +1,32 @@
+<div class="container">
+
+<div class="claim-view">
+<div class="card">
+  <div class="claim-heading">
+
+  <div> Claim Type: {{claim.claim}} </div>
+  <div> Policy Type: {{claim.policy}} </div>
+
+  </div>
+
+  <div class="claim-body">
+  <div>Details: {{claim.details}}</div>
+
+  <div class="status">
+  Status: 
+   <span [class.progress-complete] = "claim.status === 'Completed'"
+  [class.progress-unsubmitted] = "claim.status === 'Unsubmitted'"
+  [class.progress-inProgress] = "claim.status === 'In_Progress'">
+   {{claim.status}}  
+   </span>
+   </div>
+
+  </div>
+  <div class="claim-footer"><div>Incident Date: {{claim.incidentDate}}</div></div>  
+
+</div>
+</div>
+<div class="button-menu">
+<a routerLink="/claim/list" class="button-link">Go Back</a>
+</div>
+</div>
