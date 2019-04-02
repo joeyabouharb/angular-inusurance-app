@@ -24,7 +24,7 @@ export class UserLoginComponent implements OnInit {
 
     setTimeout(() => {
       this.userService.login()
-    }, 1000);
+    }, 500);
     }
   }
 

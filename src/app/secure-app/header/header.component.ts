@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
 
   onLogout() {
     this.userService.clear();
-    setTimeout(() => {this.userService.logout(); }, 1000);
+    setTimeout(() => {this.userService.logout(); }, 500);
 
   }
   handleResponsiveNavClick(event: Event) {
