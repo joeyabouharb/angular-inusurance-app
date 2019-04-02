@@ -8,8 +8,13 @@ import { User } from '../models/user';
 import decode from 'jwt-decode';
 import { Router } from '@angular/router';
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-};
+  headers: new HttpHeaders(
+    { 'Content-Type': 'application/json',
+      'Access-Control-Allow-Headers': 'authorization,content-type',
+      'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, HEAD, OPTIONS',
+      'Access-Control-Allow-Origin': '*'
+    })
+  };
 
 @Injectable({
   providedIn: 'root'
