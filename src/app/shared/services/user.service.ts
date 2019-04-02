@@ -72,11 +72,10 @@ export class UserService {
     return decode(localStorage.getItem('token'));
   }
 
-  public registerUser(form: User): void {
-    this.http.post(`${this.url}/signup`, form, httpOptions)
-    .subscribe(
-      data => console.log(data),
-      err => console.log(err)
+  public registerUser(form: User): Observable<any> {
+    return this.http.post(`${this.url}/signup`, form, httpOptions)
+    .pipe(
+      map(this.extractData)
     );
   }
 }
