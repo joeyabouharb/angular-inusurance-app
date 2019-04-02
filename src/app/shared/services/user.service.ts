@@ -10,9 +10,7 @@ import { Router } from '@angular/router';
 const httpOptions = {
   headers: new HttpHeaders(
     { 'Content-Type': 'application/json',
-      'Access-Control-Allow-Headers': 'authorization,content-type',
-      'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, HEAD, OPTIONS',
-      'Access-Control-Allow-Origin': '*'
+      'Access-Control-Allow-Origin': '*',
     })
   };
 
@@ -80,5 +78,6 @@ export class UserService {
       data => console.log(data),
       err => console.log(err)
     );
+    this.router.navigateByUrl('user/login');
   }
 }

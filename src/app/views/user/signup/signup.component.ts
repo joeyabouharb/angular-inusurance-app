@@ -17,7 +17,6 @@ export class SignupComponent implements OnInit {
   }
   onSubmit() {
     this.userService.registerUser(this.user);
-    this.router.navigateByUrl('/user/login');
 
   }
 }
