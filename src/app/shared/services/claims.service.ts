@@ -5,7 +5,8 @@ import { Claim } from '../models/claim';
 import { MessageService } from './message-service.service';
 import { catchError, map, tap } from 'rxjs/operators';
 const httpOptions = {
-  headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  headers: new HttpHeaders({ 'Content-Type': 'application/json',
+                             'Access-Control-Allow-Origin': '*', })
 };
 
 @Injectable({
