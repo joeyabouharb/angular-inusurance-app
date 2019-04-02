@@ -13,7 +13,7 @@ const httpOptions = {
 })
 export class ClaimsService {
 
-  private url = '//localhost:8080/api/claim';
+  private url = 'https://insurance-claim-api-java.herokuapp.com//api/claim';
   claims: Claim[];
 
   constructor(private http: HttpClient, private messageService: MessageService) {}

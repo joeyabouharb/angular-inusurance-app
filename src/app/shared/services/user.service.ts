@@ -15,7 +15,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UserService {
-  private url = '//localhost:8080/api/user';
+  private url = 'https://insurance-claim-api-java.herokuapp.com/api/user';
   constructor(
     private http: HttpClient,
     private message: MessageService,
