@@ -19,7 +19,10 @@ export class SignupComponent implements OnInit {
   onSubmit() {
     this.userService.registerUser(this.user).subscribe(data => console.log(data));
 
-    this.router.navigateByUrl('/user/login');
+    setTimeout(() => {
+      this.router.navigateByUrl('/user/login');
+    }, 800);
+   
 
   }
 }
