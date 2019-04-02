@@ -78,6 +78,5 @@ export class UserService {
       data => console.log(data),
       err => console.log(err)
     );
-    this.router.navigateByUrl('user/login');
   }
 }
