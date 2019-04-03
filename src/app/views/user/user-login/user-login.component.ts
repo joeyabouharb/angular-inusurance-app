@@ -20,11 +20,8 @@ export class UserLoginComponent implements OnInit {
   onSubmit() {
     this.userService.userLogin(this.credentials).subscribe((data: any) => {
       this.userService.setToken(data);
-    });
-
-    setTimeout(() => {
       this.userService.login();
-    }, 1000);
-    }
+    });
   }
+}
 

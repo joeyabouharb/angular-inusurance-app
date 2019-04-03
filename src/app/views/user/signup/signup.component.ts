@@ -17,12 +17,9 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
   }
   onSubmit() {
-    this.userService.registerUser(this.user).subscribe(data => console.log(data));
-
-    setTimeout(() => {
+    this.userService.registerUser(this.user).subscribe(data => {
+      console.log(data);
       this.router.navigateByUrl('/user/login');
-    }, 800);
-   
-
+    });
   }
 }
